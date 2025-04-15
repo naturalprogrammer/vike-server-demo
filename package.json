@@ -3,6 +3,7 @@
     "dev": "vike dev",
     "build": "vike build",
     "preview": "cross-env NODE_ENV=production tsx ./hono-entry.node.ts",
+    "prod": "NODE_ENV=production node dist/server/index.js",
     "lint": "eslint ."
   },
   "dependencies": {

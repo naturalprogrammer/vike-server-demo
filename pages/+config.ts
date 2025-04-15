@@ -1,7 +1,7 @@
 import vikeReact from "vike-react/config";
 import type { Config } from "vike/types";
 import Layout from "../layouts/LayoutDefault.js";
-
+import vikeServer from "vike-server/config";
 // Default config (can be overridden by pages)
 // https://vike.dev/config
 
@@ -13,5 +13,7 @@ export default {
   title: "My Vike App",
   description: "Demo showcasing Vike",
 
-  extends: vikeReact,
+  extends: [vikeReact, vikeServer],
+  server: 'server/index.js'
+  
 } satisfies Config;
